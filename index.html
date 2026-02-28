@@ -3,7 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>唐山华夏中西医结合医院 - 用心守护您的健康</title>
+    <title>唐山华夏中西医结合医院 - 用心守护您的健康 | 医保定点 | 30年中西医结合诊疗</title>
+    
+    <!-- SEO核心优化标签 - 适配百度/谷歌搜索 -->
+    <meta name="description" content="唐山华夏中西医结合医院（医保定点）成立于1991年，位于唐山市路北区华岩园西街1号，开设肿瘤科、妇科、外科、中医科等科室，提供中西医结合诊疗服务，联系电话：18714131957。">
+    <meta name="keywords" content="唐山华夏中西医结合医院, 唐山中西医结合医院, 唐山肿瘤科, 唐山妇科, 唐山中医科, 唐山医保定点医院">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="唐山华夏中西医结合医院">
+    <meta name="copyright" content="唐山华夏中西医结合医院">
+    
+    <!-- 本地SEO结构化数据（提升百度本地搜索排名） -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Hospital",
+        "name": "唐山华夏中西医结合医院",
+        "telephone": "18714131957",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "唐山市路北区华岩园西街1号",
+            "addressLocality": "唐山市",
+            "addressRegion": "河北省",
+            "postalCode": "063000",
+            "addressCountry": "中国"
+        },
+        "department": [
+            { "@type": "MedicalDepartment", "name": "西医内科" },
+            { "@type": "MedicalDepartment", "name": "肿瘤科" },
+            { "@type": "MedicalDepartment", "name": "妇科" },
+            { "@type": "MedicalDepartment", "name": "外科" },
+            { "@type": "MedicalDepartment", "name": "中医科" },
+            { "@type": "MedicalDepartment", "name": "中西医结合科" },
+            { "@type": "MedicalDepartment", "name": "预防保健科" }
+        ],
+        "openingHours": "Mo-Su 08:30-17:30",
+        "url": "https://tshxzxyjhyy.com",
+        "sameAs": "https://tshxzxyjhyy.com"
+    }
+    </script>
+
     <!-- 引入Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入Font Awesome图标 -->
@@ -63,7 +101,6 @@
                     <a href="#recruitment" class="text-gray-700 hover:text-primary font-medium">招聘信息</a>
                 </nav>
                 
-                
                 <!-- 移动端菜单按钮 -->
                 <button id="menuBtn" class="md:hidden text-gray-700 hover:text-primary">
                     <i class="fa-solid fa-bars text-2xl"></i>
@@ -79,26 +116,30 @@
                     <a href="#recruitment" class="text-gray-700 hover:text-primary font-medium py-2">招聘信息</a>
                     <div class="flex items-center space-x-2 pt-2 border-t border-gray-200">
                         <i class="fa-solid fa-phone-volume text-secondary"></i>
+                        <span>18714131957</span>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- 首页横幅 - 修改标题为左对齐 -->
-<section id="home" class="relative h-[70vh] min-h-[500px] bg-cover bg-center" style="background-image: url('/images/图片1.jpg');"
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-        <div class="max-w-2xl text-left">
-            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4 text-shadow text-black">
-                用心守护 每一次健康托付
-            </h1>
-            <p class="text-[clamp(1rem,2vw,1.25rem)] mb-8 text-gray-800">
-                唐山华夏中西医结合医院拥有专业的医疗团队、先进的诊疗设备，为您和家人提供全方位的健康保障
-            </p>
+    <!-- 首页横幅 - 修复标签未闭合问题 + 优化标题 -->
+    <section id="home" class="relative h-[70vh] min-h-[500px] bg-cover bg-center" style="background-image: url('/images/图片1.jpg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div class="max-w-2xl text-left">
+                <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4 text-shadow text-white">
+                    唐山华夏中西医结合医院<br>用心守护 每一次健康托付
+                </h1>
+                <p class="text-[clamp(1rem,2vw,1.25rem)] mb-8 text-white">
+                    30年品牌积淀 · 医保定点单位 · 专业中西医结合诊疗团队
+                </p>
+                <a href="#appointment" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium hover-scale">
+                    查看问诊时间 <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- 医院简介 -->
     <section class="py-16 bg-neutral">
@@ -110,7 +151,7 @@
             
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="hover-scale">
-                    <img src='/images\图片二.jpg' alt="医院环境" class="rounded-lg shadow-lg w-full h-auto">
+                    <img src='/images/图片二.jpg' alt="唐山华夏中西医结合医院环境" class="rounded-lg shadow-lg w-full h-auto">
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">唐山华夏中西医结合医院 - 您身边的健康守护者</h3>
@@ -154,7 +195,7 @@
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
                     <!-- 左侧图片（固定高度） -->
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\西医内科.jpg' alt="西医内科" class="w-full h-full object-cover">
+                        <img src='/images/西医内科.jpg' alt="唐山华夏中西医结合医院西医内科" class="w-full h-full object-cover">
                     </div>
                     <!-- 右侧文字（精简内边距） -->
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
@@ -173,7 +214,7 @@
                 <!-- 肿瘤科（二层） -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\肿瘤科.jpg' alt="肿瘤科" class="w-full h-full object-cover">
+                        <img src='/images/肿瘤科.jpg' alt="唐山华夏中西医结合医院肿瘤科" class="w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
                         <div class="flex items-center mb-1">
@@ -191,7 +232,7 @@
                 <!-- 妇科（二层） -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\妇科.jpg' alt="妇科" class="w-full h-full object-cover">
+                        <img src='/images/妇科.jpg' alt="唐山华夏中西医结合医院妇科" class="w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
                         <div class="flex items-center mb-1">
@@ -209,7 +250,7 @@
                 <!-- 外科（二层） -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\外科.jpg' alt="外科" class="w-full h-full object-cover">
+                        <img src='/images/外科.jpg' alt="唐山华夏中西医结合医院外科" class="w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
                         <div class="flex items-center mb-1">
@@ -227,7 +268,7 @@
                 <!-- 中医科1（二层） -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\中医2.jpg' alt="中医科（二层）" class="w-full h-full object-cover">
+                        <img src='/images/中医2.jpg' alt="唐山华夏中西医结合医院中医科（二层）" class="w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
                         <div class="flex items-center mb-1">
@@ -245,7 +286,7 @@
                 <!-- 中西医结合科（二层） -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\中西医结合科.png' alt="中西医结合科" class="w-full h-full object-cover">
+                        <img src='/images/中西医结合科.png' alt="唐山华夏中西医结合医院中西医结合科" class="w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
                         <div class="flex items-center mb-1">
@@ -263,7 +304,7 @@
                 <!-- 预防保健科（二层） -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\预防保健推拿.jpg' alt="预防保健科" class="w-full h-full object-cover">
+                        <img src='/images/预防保健推拿.jpg' alt="唐山华夏中西医结合医院预防保健科" class="w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
                         <div class="flex items-center mb-1">
@@ -281,7 +322,7 @@
                 <!-- 中医科（三层）- 长文本适配 -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-56 md:max-h-48">
                     <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images\中医2.jpg' alt="中医科（三层）" class="w-full h-full object-cover">
+                        <img src='/images/中医2.jpg' alt="唐山华夏中西医结合医院中医科（三层）" class="w-full h-full object-cover">
                     </div>
                     <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
                         <div class="flex items-center mb-1">
@@ -405,94 +446,94 @@
         </div>
     </section>
 
-<!-- 新增：招聘信息板块 - 统一联系方式版 -->
-<section id="recruitment" class="py-12 md:py-16 bg-gray-50/50">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 md:mb-12">
-            <h2 class="text-[clamp(1.25rem,3vw,2rem)] font-bold text-gray-800 mb-3">人才招聘</h2>
-            <div class="w-16 h-1 bg-primary mx-auto mb-4"></div>
-            <p class="text-gray-600 max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
-                我院因业务发展需要，现面向社会公开招聘以下医疗相关专业人才，欢迎有志之士加入我们的团队
-            </p>
-        </div>
+    <!-- 新增：招聘信息板块 - 统一联系方式版 -->
+    <section id="recruitment" class="py-12 md:py-16 bg-gray-50/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-12">
+                <h2 class="text-[clamp(1.25rem,3vw,2rem)] font-bold text-gray-800 mb-3">人才招聘</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
+                    我院因业务发展需要，现面向社会公开招聘以下医疗相关专业人才，欢迎有志之士加入我们的团队
+                </p>
+            </div>
 
-        <!-- 单个容器整合所有岗位 + 统一联系方式 -->
-        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm hover-scale overflow-hidden">
-            <!-- 标题栏 -->
-            <h3 class="text-xl font-bold text-gray-800 p-6 border-b border-gray-100 flex items-center">
-                <i class="fa-solid fa-user-tie text-primary mr-2"></i> 招聘岗位及要求
-            </h3>
-            
-            <!-- 岗位列表 -->
-            <div class="p-6">
-                <!-- 所有岗位信息整合 -->
-                <div class="space-y-6 mb-8">
-                    <!-- 护士岗位 -->
-                    <div class="border-l-4 border-green-500 pl-4 py-2">
-                        <div class="flex flex-wrap justify-between items-center mb-2">
-                            <h4 class="text-lg font-bold text-gray-800">护士 <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full ml-2">急聘</span></h4>
-                            <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 全职 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
+            <!-- 单个容器整合所有岗位 + 统一联系方式 -->
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm hover-scale overflow-hidden">
+                <!-- 标题栏 -->
+                <h3 class="text-xl font-bold text-gray-800 p-6 border-b border-gray-100 flex items-center">
+                    <i class="fa-solid fa-user-tie text-primary mr-2"></i> 招聘岗位及要求
+                </h3>
+                
+                <!-- 岗位列表 -->
+                <div class="p-6">
+                    <!-- 所有岗位信息整合 -->
+                    <div class="space-y-6 mb-8">
+                        <!-- 护士岗位 -->
+                        <div class="border-l-4 border-green-500 pl-4 py-2">
+                            <div class="flex flex-wrap justify-between items-center mb-2">
+                                <h4 class="text-lg font-bold text-gray-800">护士 <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full ml-2">急聘</span></h4>
+                                <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 全职 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
+                                <p class="text-gray-600 text-sm">五官端正、熟练操作输液技术、具有护士资格证书</p>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
-                            <p class="text-gray-600 text-sm">五官端正、熟练操作输液技术、具有护士资格证书</p>
+
+                        <!-- 医师岗位 -->
+                        <div class="border-l-4 border-blue-500 pl-4 py-2">
+                            <div class="flex flex-wrap justify-between items-center mb-2">
+                                <h4 class="text-lg font-bold text-gray-800">医师 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">招聘中</span></h4>
+                                <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 全职 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
+                                <p class="text-gray-600 text-sm">具有执业医师证书、能独立开诊、能够管理科室</p>
+                            </div>
+                        </div>
+
+                        <!-- 推拿师岗位 -->
+                        <div class="border-l-4 border-blue-500 pl-4 py-2">
+                            <div class="flex flex-wrap justify-between items-center mb-2">
+                                <h4 class="text-lg font-bold text-gray-800">推拿师 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">招聘中</span></h4>
+                                <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 灵活就业 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
+                                <p class="text-gray-600 text-sm">熟练掌握推拿技术、工作时间自由</p>
+                            </div>
+                        </div>
+
+                        <!-- 超声医师岗位 -->
+                        <div class="border-l-4 border-blue-500 pl-4 py-2">
+                            <div class="flex flex-wrap justify-between items-center mb-2">
+                                <h4 class="text-lg font-bold text-gray-800">超声医师 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">招聘中</span></h4>
+                                <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 可兼职 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
+                                <p class="text-gray-600 text-sm">熟练操作影像超声技术、可接受兼职</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- 医师岗位 -->
-                    <div class="border-l-4 border-blue-500 pl-4 py-2">
-                        <div class="flex flex-wrap justify-between items-center mb-2">
-                            <h4 class="text-lg font-bold text-gray-800">医师 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">招聘中</span></h4>
-                            <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 全职 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
+                    <!-- 统一的联系方式 + 招聘说明 -->
+                    <div class="bg-primary/5 rounded-lg p-5 border border-primary/20">
+                        <h4 class="font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fa-solid fa-phone-volume text-primary mr-2"></i> 联系方式及说明
+                        </h4>
+                        <div class="text-gray-700 space-y-2 text-sm">
+                            <p><i class="fa-solid fa-user text-primary mr-1"></i> 联系人：梁女士</p>
+                            <p><i class="fa-solid fa-phone text-primary mr-1"></i> 联系电话：18714131957</p>
+                            <hr class="border-gray-200 my-2">
+                            <p><i class="fa-solid fa-circle-info text-primary mr-1"></i> 1. 所有岗位薪资待遇均面议，具体根据个人能力及经验确定</p>
+                            <p><i class="fa-solid fa-circle-info text-primary mr-1"></i> 2. 有意者可直接联系上述电话，面试地址：唐山市路北区华岩园西街1号唐山华夏中西医结合医院</p>
                         </div>
-                        <div>
-                            <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
-                            <p class="text-gray-600 text-sm">具有执业医师证书、能独立开诊、能够管理科室</p>
-                        </div>
-                    </div>
-
-                    <!-- 推拿师岗位 -->
-                    <div class="border-l-4 border-blue-500 pl-4 py-2">
-                        <div class="flex flex-wrap justify-between items-center mb-2">
-                            <h4 class="text-lg font-bold text-gray-800">推拿师 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">招聘中</span></h4>
-                            <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 灵活就业 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
-                        </div>
-                        <div>
-                            <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
-                            <p class="text-gray-600 text-sm">熟练掌握推拿技术、工作时间自由</p>
-                        </div>
-                    </div>
-
-                    <!-- 超声医师岗位 -->
-                    <div class="border-l-4 border-blue-500 pl-4 py-2">
-                        <div class="flex flex-wrap justify-between items-center mb-2">
-                            <h4 class="text-lg font-bold text-gray-800">超声医师 <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full ml-2">招聘中</span></h4>
-                            <span class="text-sm text-gray-500"><i class="fa-solid fa-briefcase text-primary mr-1"></i> 可兼职 | <i class="fa-solid fa-location-dot text-primary mr-1"></i> 唐山·路北区 | <i class="fa-solid fa-yen-sign text-primary mr-1"></i> 薪资面议</span>
-                        </div>
-                        <div>
-                            <h5 class="font-bold text-gray-800 mb-1 text-sm">岗位要求：</h5>
-                            <p class="text-gray-600 text-sm">熟练操作影像超声技术、可接受兼职</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 统一的联系方式 + 招聘说明 -->
-                <div class="bg-primary/5 rounded-lg p-5 border border-primary/20">
-                    <h4 class="font-bold text-gray-800 mb-3 flex items-center">
-                        <i class="fa-solid fa-phone-volume text-primary mr-2"></i> 联系方式及说明
-                    </h4>
-                    <div class="text-gray-700 space-y-2 text-sm">
-                        <p><i class="fa-solid fa-user text-primary mr-1"></i> 联系人：梁女士</p>
-                        <p><i class="fa-solid fa-phone text-primary mr-1"></i> 联系电话：18714131957</p>
-                        <hr class="border-gray-200 my-2">
-                        <p><i class="fa-solid fa-circle-info text-primary mr-1"></i> 1. 所有岗位薪资待遇均面议，具体根据个人能力及经验确定</p>
-                        <p><i class="fa-solid fa-circle-info text-primary mr-1"></i> 2. 有意者可直接联系上述电话，面试地址：唐山市路北区华岩园西街1号唐山华夏中西医结合医院</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- 页脚 -->
     <footer class="bg-gray-800 text-white py-12">
@@ -543,8 +584,20 @@
                     </ul>
                 </div>
                 
+                <div>
+                    <h4 class="text-lg font-bold mb-4">联系我们</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fa-solid fa-location-dot text-primary mr-2"></i> 地址：唐山市路北区华岩园西街1号</li>
+                        <li><i class="fa-solid fa-phone text-primary mr-2"></i> 总机：18714131957</li>
+                        <li><i class="fa-solid fa-clock text-primary mr-2"></i> 营业时间：8:30-17:30</li>
+                        <li><i class="fa-solid fa-shield-halved text-primary mr-2"></i> 医保定点单位</li>
+                    </ul>
+                </div>
             </div>
             
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2026 唐山华夏中西医结合医院 版权所有 | 冀ICP备XXXXXXX号</p>
+            </div>
         </div>
     </footer>
 
