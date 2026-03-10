@@ -191,25 +191,28 @@
             <!-- 竖向列表容器（缩小间距） -->
             <div class="grid grid-cols-1 gap-5 max-w-4xl mx-auto">
             
-                <!-- 西医内科（一层） -->
-                <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
-                    <!-- 左侧图片（固定高度） -->
-                    <div class="w-full md:w-1/4 h-32 md:h-full">
-                        <img src='/images/西医内科.jpg' alt="唐山华夏中西医结合医院西医内科" class="w-full h-full object-cover">
-                    </div>
-                    <!-- 右侧文字（精简内边距） -->
-                    <div class="w-full md:w-3/4 p-4 flex flex-col justify-center">
-                        <div class="flex items-center mb-1">
-                            <h3 class="text-lg font-bold text-gray-800">西医内科</h3>
-                            <span class="ml-2 bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">一层</span>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-2 flex-1 line-clamp-2">打针、输液，专治西医内科各类常见疾病。</p>
-                        <div class="flex items-center text-gray-700 text-sm">
-                            <i class="fa-solid fa-phone text-secondary mr-1 text-sm"></i>
-                            <span>15033922961</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- 西医内科（一层）- 二维码完整显示版 -->
+<div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
+  <!-- 图片容器：加 bg-white 避免留白突兀 -->
+  <div class="w-full md:w-1/5 h-24 md:h-full bg-white">
+    <img 
+      src='/images/西医内科.jpg' 
+      alt="唐山华夏中西医结合医院西医内科" 
+      class="w-full h-full object-contain"  <!-- 关键：object-contain 完整显示 -->
+    >
+  </div>
+  <div class="w-full md:w-4/5 p-4 flex flex-col justify-center">
+    <div class="flex items-center mb-1">
+      <h3 class="text-lg font-bold text-gray-800">西医内科</h3>
+      <span class="ml-2 bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">一层</span>
+    </div>
+    <p class="text-gray-600 text-sm mb-2 flex-1 line-clamp-2">打针、输液，专治西医内科各类常见疾病。</p>
+    <div class="flex items-center text-gray-700 text-sm">
+      <i class="fa-solid fa-phone text-secondary mr-1 text-sm"></i>
+      <span>15033922961</span>
+    </div>
+  </div>
+</div>
                 
                 <!-- 肿瘤科（二层） -->
                 <div class="bg-white rounded-lg shadow-sm hover-scale overflow-hidden flex flex-col md:flex-row max-h-48 md:max-h-40">
